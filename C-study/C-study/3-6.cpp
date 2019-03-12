@@ -1,4 +1,4 @@
-//Ä£·ÂÊép61Àı3 - 7±àĞ´³ÌĞò£ºÓÃÃæÏò¶ÔÏóµÄ·½·¨ÊµÏÖÑ§Éú³É¼¨»ù±¾ĞÅÏ¢£¨Ñ§ºÅ¡¢ĞÕÃû¡¢Ó¢Óï³É¼¨¡¢CÓïÑÔ³É¼¨£©µÄÊäÈë¡¢ĞŞ¸Ä¡¢¼ÆËãÆ½¾ù·Ö¼°Êä³ö¹¦ÄÜ¡£ÔÚÖ÷º¯ÊıÖĞ½øĞĞ²âÊÔ¡£
+//æ¨¡ä»¿ä¹¦p61ä¾‹3 - 7ç¼–å†™ç¨‹åºï¼šç”¨é¢å‘å¯¹è±¡çš„æ–¹æ³•å®ç°å­¦ç”Ÿæˆç»©åŸºæœ¬ä¿¡æ¯ï¼ˆå­¦å·ã€å§“åã€è‹±è¯­æˆç»©ã€Cè¯­è¨€æˆç»©ï¼‰çš„è¾“å…¥ã€ä¿®æ”¹ã€è®¡ç®—å¹³å‡åˆ†åŠè¾“å‡ºåŠŸèƒ½ã€‚åœ¨ä¸»å‡½æ•°ä¸­è¿›è¡Œæµ‹è¯•ã€‚
 #include<iostream>
 #include<string>
 using namespace std;
@@ -18,34 +18,34 @@ private:
 
 void Student::input()
 {
-	cout << "ÇëÊäÈëÑ§Éú»ù±¾ĞÅÏ¢" << endl;
-	cout << "Ñ§ºÅ:";		cin >> number;		cout << endl;
-	cout << "ĞÕÃû:";		cin >> name;		cout << endl;
-	cout << "Ó¢Óï³É¼¨:";	cin >> EN_score;	cout << endl;
-	cout << "CÓïÑÔ³É¼¨:";	cin >> C_score;		cout << endl;
+	cout << "è¯·è¾“å…¥å­¦ç”ŸåŸºæœ¬ä¿¡æ¯" << endl;
+	cout << "å­¦å·:";		cin >> number;		cout << endl;
+	cout << "å§“å:";		cin >> name;		cout << endl;
+	cout << "è‹±è¯­æˆç»©:";	cin >> EN_score;	cout << endl;
+	cout << "Cè¯­è¨€æˆç»©:";	cin >> C_score;		cout << endl;
 }
 
 void Student::revise()
 {
-	cout << "ÇëÊäÈëĞŞ¸ÄµÄÑ§ÉúĞÅÏ¢" << endl;
-	cout << "Ñ§ºÅ:";		cin >> number;		cout << endl;
-	cout << "ĞÕÃû:";		cin >> name;		cout << endl;
-	cout << "Ó¢Óï³É¼¨:";	cin >> EN_score;	cout << endl;
-	cout << "CÓïÑÔ³É¼¨:";	cin >> C_score;		cout << endl;
+	cout << "è¯·è¾“å…¥ä¿®æ”¹çš„å­¦ç”Ÿä¿¡æ¯" << endl;
+	cout << "å­¦å·:";		cin >> number;		cout << endl;
+	cout << "å§“å:";		cin >> name;		cout << endl;
+	cout << "è‹±è¯­æˆç»©:";	cin >> EN_score;	cout << endl;
+	cout << "Cè¯­è¨€æˆç»©:";	cin >> C_score;		cout << endl;
 }
 
 void Student::calculate()
 {
-	cout << "Æ½¾ù³É¼¨Îª" << (EN_score + C_score) / 2 << endl;
+	cout << "å¹³å‡æˆç»©ä¸º" << (EN_score + C_score) / 2 << endl;
 }
 
 void Student::display()
 {
-	cout << "Ñ§Éú»ù±¾ĞÅÏ¢ÈçÏÂ:" << endl;
-	cout << "	Ñ§ºÅ" << number << endl;
-	cout << "	ĞÕÃû" << name << endl;
-	cout << "	Ó¢Óï³É¼¨" << EN_score << endl;
-	cout << "	CÓïÑÔ³É¼¨" << C_score << endl;
+	cout << "å­¦ç”ŸåŸºæœ¬ä¿¡æ¯å¦‚ä¸‹:" << endl;
+	cout << "	å­¦å·" << number << endl;
+	cout << "	å§“å" << name << endl;
+	cout << "	è‹±è¯­æˆç»©" << EN_score << endl;
+	cout << "	Cè¯­è¨€æˆç»©" << C_score << endl;
 }
 
 int main()
@@ -53,7 +53,7 @@ int main()
 	Student st1;
 	st1.input();
 	int choice;
-	cout << "ÊÇ·ñĞèÒªĞŞ¸ÄÑ§ÉúĞÅÏ¢" << endl << "ĞŞ¸ÄÇë°´1£¬²»ĞŞ¸ÄÇë°´ÆäËû¼ü" << endl;
+	cout << "æ˜¯å¦éœ€è¦ä¿®æ”¹å­¦ç”Ÿä¿¡æ¯" << endl << "ä¿®æ”¹è¯·æŒ‰1ï¼Œä¸ä¿®æ”¹è¯·æŒ‰å…¶ä»–é”®" << endl;
 	cin >> choice;
 	switch (choice)
 	{
@@ -67,3 +67,4 @@ int main()
 	system("pause");
 	return 0;
 }
+//æ²¡æœ‰ä½¿ç”¨ç»“æ„ä½“æ•°ç»„ï¼Œä»…å¯¹å•ä¸ªå­¦ç”Ÿè¿›è¡Œæ“ä½œï¼Œ
