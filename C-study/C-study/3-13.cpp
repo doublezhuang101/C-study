@@ -3,23 +3,18 @@ using namespace std;
 class Date
 {
 public:
-	Date(int x=25, int y=3, int z=2015)
-	{
-		day = x;
-		mounth = y;
-		year = z;
-	}
-	void print() 
-	{
-		cout << year << "年" << mounth << "月" << day << "日" << endl;
-	}
+	Date(int d,int m,int y):day(d),mounth(m),year(y){}
+	void print();
 private:
 	int day, mounth, year;
 };
-
+void Date::print()
+{
+	cout << year << "年" << mounth << "月" << day << "日" << endl;
+}
 int main()
 {
-	Date da;
+	Date da(25,3,2015);
 	da.print();
 	cin.get();
 	return 0;
