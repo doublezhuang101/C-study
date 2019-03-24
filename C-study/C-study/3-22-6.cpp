@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-void quick_sork(long long* a, int l, int r);
+void quick_sork(long long *a, int l, int r);
 int main()
 {
 	int i;
@@ -11,13 +11,13 @@ int main()
 	{
 		cin >> a[i];
 	}
-	void quick_sort(long long a[], int l, int r);
+	quick_sork(a, 0,5);
 	for (i = 0; i < n; i++)
 		cout << a[i];
 	system("pause");
 	return 0;
 }
-void quick_sork(long long* a, int l, int r)
+void quick_sork(long long *a, int l, int r)
 {
 	if (l < r)
 	{
