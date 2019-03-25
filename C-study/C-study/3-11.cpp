@@ -18,7 +18,7 @@ public:
 
 void Time::display()
 {
-	cout << hour << "Ê±" << minute << "·Ö" << second << "Ãë" << endl;
+	cout << hour << "?" << minute << "?" << second << "?" << endl;
 }
 
 int main()
