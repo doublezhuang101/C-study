@@ -22,9 +22,9 @@ istream &operator>>(istream &in, CFraction &x)
 	{
 		cin >> x.nume >> ch >> x.deno;
 		if (x.deno == 0)
-			cerr << "分母为0, 请重新输入\n";
+			cout << "分母为0, 请重新输入\n";
 		else if (ch != '/')
-			cerr << "格式错误（形如m/n）! 请重新输入\n";
+			cout << "格式错误（形如m/n）! 请重新输入\n";
 		else
 			break;
 	}
