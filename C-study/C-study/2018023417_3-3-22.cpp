@@ -11,7 +11,7 @@ public:
 	friend istream &operator>>(istream &in, CFraction &x);
 	friend ostream &operator<<(ostream &out, CFraction x);
 
-	CFraction operator+(const CFraction &c);  //两个分数相加，结果要化简
+	CFraction operator+(const CFraction &c);  
 };
 
 
