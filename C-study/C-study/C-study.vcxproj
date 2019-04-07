@@ -19,11 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="DOS 课设\源.cpp" />
-    <ClCompile Include="StudentMenu.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="StudentMenu.h" />
+    <ClCompile Include="4-7-2.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

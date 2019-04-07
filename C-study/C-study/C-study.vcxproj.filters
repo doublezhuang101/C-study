@@ -15,16 +15,8 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="DOS 课设\源.cpp">
+    <ClCompile Include="4-7-2.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="StudentMenu.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="StudentMenu.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>
