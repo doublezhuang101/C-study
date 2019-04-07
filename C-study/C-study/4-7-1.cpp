@@ -33,7 +33,7 @@ istream& operator >>(istream& in, A& a)
 
 ostream& operator<<(ostream& out, A& a)
 {
-	out << a.m << ' ' << a.m;
+	out << a.m << ' ' << a.n;
 	cout << endl;
 	return out;
 }
