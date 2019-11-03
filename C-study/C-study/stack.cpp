@@ -28,8 +28,10 @@ typedef struct
 int main()
 {
 	//主程序，所有功能通过调用函数实现
+
 	SequenStack s;
 	//定义一个栈
+
 	//将十个同学信息入栈
 	//打印栈的长度
 	//输出所有数据
@@ -46,7 +48,13 @@ int main()
 SequenStack* InitList(SequenStack &s)
 {
 	s.base = new student[MAXSIZE];
-
+	if (s.base == NULL)
+	{
+		exit(0);
+	}
+	s.top = s.base;
+	s.stacksize = MAXSIZE;
+	return &s;
 	//分配存储空间
 }
 
@@ -60,14 +68,25 @@ int InitValue(SequenStack* S)
 	//数据元素赋初值
 }
 
-int Pop(SequenStack* S, elemtype* e)
+int Pop(SequenStack* s, student* e)
 {
 	//弹出栈顶元素，并放入e中。
+	if (s->top == s->base)
+	{
+		return -1;
+	}
 
 }
 
-int Push(SequenStack* S, elemtype* e)
+int Push(SequenStack* s, student* e)
 {
+	if (s->top - s->base == s->stacksize)
+	{
+		return -1;
+	}
+	s->top = e;
+	s->top++;
+	return 1;
 	//将数据元素e入栈。
 
 }
