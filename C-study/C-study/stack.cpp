@@ -31,7 +31,7 @@ int main()
 
 	SequenStack s;
 	//定义一个栈
-
+	InitList(s);
 	//将十个同学信息入栈
 	//打印栈的长度
 	//输出所有数据
@@ -75,6 +75,8 @@ int Pop(SequenStack* s, student* e)
 	{
 		return -1;
 	}
+	e = (s->top - s->base);
+
 
 }
 
